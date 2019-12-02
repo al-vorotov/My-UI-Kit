@@ -1,0 +1,38 @@
+.dealsPage{
+  display: grid;
+  grid-template-areas: 'head head'
+                       'main  main';
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 20% 80%;
+  background-color: #ffffff;
+}
+.dealsPage__header  {
+  grid-area: head;
+  background-color: #f5f5f5;
+}
+
+.dealsPage__content  {
+  grid-area: main;
+  padding: 35px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto 50px;
+  display: grid;
+  grid-template-areas:
+    'notice notice'
+    'left   right ';
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 35px;
+}
+
+.notice {
+  grid-area: notice;
+}
+
+.dealsPage__content > nav{
+  grid-area: left;
+}
+.dealsPage__content > article{
+  grid-area: right;
+}
