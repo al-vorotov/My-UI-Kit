@@ -3,7 +3,7 @@ import LayoutContext from './context'
 
 const LayoutProvider = ({children}) => {
   const object = {
-
+name:'Overview'
   };
 
   const [state, setState] = useState(object);

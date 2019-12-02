@@ -1,6 +1,6 @@
 import React from 'react';
-import LayoutProvider from './components/Layout'
-import Layout from "./components/Layout/Layout";
+import LayoutProvider from './components/Layout/Layout'
+import Layout from "./components/Layout";
 
 import './App.css';
 

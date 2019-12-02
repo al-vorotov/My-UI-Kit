@@ -1,0 +1,42 @@
+@import '../../../vars';
+@import '~lendinvest-styleguide/src/globals/colors';
+@import '~lendinvest-styleguide/src/globals/typography';
+@import '~lendinvest-styleguide/src/globals/spacing';
+
+.dealsNav__linkButton {
+  @include f5-strong-base;
+  color: $color-blue;
+  text-decoration: underline;
+  cursor: pointer;
+
+  + & {
+    margin-top: $spacing-small;
+  }
+}
+.dealsNav__linkButton_disabled{
+    @include f5-strong-base;
+    cursor: pointer;
+    margin-top: $spacing-small;
+}
+.dealsNav__linkText {
+  color: $color-blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: $spacing-small;
+}
+.dealsNav__linkText_disabled {
+  cursor: pointer;
+  margin-left: $spacing-small;
+}
+.dealsNav__linkButton__children{
+  margin-top: $spacing-small;
+}
+.done_icon {
+  background-color: $color-green;
+  justify-content: center;
+  color: #ffff;
+  border-radius: 50%;
+  font-size: 15px;
+  margin-left: $spacing-small;
+  vertical-align: sub;
+}
